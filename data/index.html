@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css" >
+
+    <title>Configuracion del Nodo</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 align="center">Configuracion del Nodo</h1>
+        <hr>
+        <h2>Estado</h2>
+        <div class="row">
+            
+            <div class="col-md-2">
+                    <div id="nodo_ssid_on">SSID: </div>
+                    <div id="nodo_ssid_pwr">PWR: </div>
+            </div>
+            <div class="col-md-2">
+                    <div id="nodo_ap_ssid">AP SSID: </div>
+                    <div id="nodo_ap_password">AP PassWord: </div>
+            </div>
+            <div class="col-md-2">
+                    <div id="nodo_mqtt_server_on">MQTT Server: </div>
+                    <div id="nodo_mqtt_port_on">MQTT Port: </div>
+                    <div id="nodo_mqtt_state">MQTT State: </div>
+            </div>
+            <div class="col-md-2">
+                    <div id="nodo_uptime">UpTime: </div>
+                    <div id="nodo_looptime">LoopTime: </div>
+            </div>
+            </div>
+            <hr>
+
+            <h2 align="justify">Configuracion De Punto De Acceso</h2>
+            <div class="row">
+                    <div class="col-md-6">
+                        <h3>Station Mode</h3>  
+                        <div><label for=ssid>SSID:</label>
+                        <select name=ssid id=ssid ></select></div>
+                        <div><label for=psk>PASSWORD:</label>
+                        <input type=password name=psk id=psk></div>
+                        <button type="button" onclick="bottonclick_connect(this);" >Conectar</button>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Access Point Mode</h3>
+                        <div><label for=ssid_AP>SSID:</label>
+                        <input type="text" name=ssid_AP id=ssid_AP></div>
+                        <div><label for=psk_AP>PASSWORD:</label>
+                        <input type=password name=psk_AP id=psk_AP></div>
+                        <button type="button" onclick="bottonclick_connect_AP(this);">Conectar</button>
+                    </div>
+                  
+        </div>  
+        <hr>
+                    <h2 align="justify">Configuracion MQTT</h2>
+                      <label for=mqtt_server>Servidor:</label>
+                        <input type=text name=mqtt_server id="mqtt_server" value="">
+                      <label for=puerto>Puerto:</label>
+                        <input type=text name=mqtt_puerto id=mqtt_puerto value="">
+                    <button type="button" onclick="bottonclick_config(this);" >Configurar</button> 
+                  
+                  <hr>
+            </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    -->
+</body>
+<script src="./libs/js/index.js" > </script>
+</html>
