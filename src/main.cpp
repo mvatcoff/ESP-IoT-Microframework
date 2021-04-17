@@ -40,7 +40,7 @@ void loop() {
   me.loop();
   WebSocket_loop();
   
-  /// Añadir aqui de bajo todos los eventos WebSockets    ---> [Gadget]_loop()
+  /// Añadir aqui debajo todos los eventos WebSockets    ---> [Gadget]_loop()
   luz_loop();
   DS18B20_loop();
   ultrasonico_loop();
